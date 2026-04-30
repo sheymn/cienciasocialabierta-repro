@@ -94,6 +94,39 @@ La figura que se busca reproducir corresponde a un gráfico de barras apiladas q
 
 - Los datos originales deben ser llamados desde input/data/original, el código de procesamiento se debe incluir en este mismo archivo (reporte-repro.qmd).
 
+```{r}
+#| warning: false
+
+# Cargar librerias
+if (!require("pacman")) install.packages("pacman") # instalar pacman
+                            # cargar librerias
+pacman::p_load(dplyr,       # Manipulacion de datos 
+               haven,       # importar datos en .dta o .sav
+               car,         # recodificar variables
+               sjlabelled,  # etiquetado de variables
+               sjmisc,      # descriptivos y frecuencias
+               sjPlot,      # tablas, plots y descriptivos
+               summarytools,
+               knitr # resumen de dataframe
+               )
+
+# Cargar datos
+issp <- read_sav("input/data/original/ZA8790_v1-0-0.sav")
+
+# Valores perdidos
+issp <- issp %>%
+  mutate(across(everything(), ~ ifelse(. %in% c(-9, -8, -7, -4, -3, -1), NA, .)))
+```
+
+
+```{r clases_diagrama}
+#| warning: false
+
+issp %>%
+  descr(v54) %>%
+  as.data.frame() %>%
+  kable(digits = 2, caption = "Estadísticos descriptivos de v54")
+```
 ### Reproducción
 
 - Generación de tabla o figura a reproducir.
