@@ -60,9 +60,17 @@ csl: "input/bib/apa.csl"
 
 # Selección de artículo/reporte
 
-- Referencia del artículo seleccionado
-- Breve resumen del artículo seleccionado
-- Justificación de la selección del artículo
+## Artículo seleccionado
+
+Se seleccionó el siguiente artículo para el ejercicio de reproducibilidad: Uncovering misperceptions of social inequalities: what matters most, objective class or subjective social status? El cuál, fue realizado por Giacomo Melli y Leo Azzollini, sociologos italianos. El artículo se publicó en la revista *Frontiers in Sociology* en el año 2025. Y su DOI es: https://doi.org/10.3389/fsoc.2025.1617413 
+
+## Resumen del artículo seleccionado
+
+El artículo se centra en investigar las percepciones de desigualdad social en relación con la clase social objetiva y el estatus social subjetivo. Utilizando datos del International Social Survey Programme (ISSP) que abarcan 35 países y 96 años-entre 1992 y 2019, los autores analizan cómo la percepción de la posición social, tanto la objetiva como la subjetiva, influyen en la percepción de desigualdad. Los resultados del artículo reflejan que tanto la clase social objetiva como el estatus social subjetivo son importantes para comprender las percepciones de desigualdad, pero el estatus social subjetivo tiene un impacto más fuerte en la percepción de desigualdad que la clase social objetiva. 
+
+## Justificación de la selección del artículo
+
+El artículo fue seleccionado porque cumple con al menos dos criterios clave para el ejercicio de reproducibilidad: (1) los datos están disponibles públicamente, y (2) la metodología está descrita con suficiente detalle. Aunque el código de análisis no fue proporcionado por los autores, la claridad metodológica permite intentar una reproducción parcial de los resultados. Además, el tema del artículo es relevante para la sociología contemporánea, ya que aborda la percepción de desigualdad social, un tema de gran interés en la investigación sociológica actual. La disponibilidad de datos del ISSP también facilita el acceso a los datos necesarios para intentar reproducir los resultados del estudio.
 
 # Evaluación de reproducibilidad
 
